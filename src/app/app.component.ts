@@ -26,8 +26,6 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Adotar', component: 'AdoptPage' },
       { title: 'Doar', component: 'DonatePage' },
-      { title: 'cadastro', component: 'RegisterPage' },
-      { title: 'Perfil', component: 'RegisterrPage' },
       { title: 'Sair', component: 'LogoffPage' }
     ];
 
