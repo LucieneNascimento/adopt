@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faça seu cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-img">
+  <img src="assets/imgs/logo.png" alt="logo">
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="E-mail" required type="email" #email></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Senha" required type="password" #senha [(ngModel)]="s"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Repita a senha" type="password" [(ngModel)]="ss" (blur)="conferirSenha()"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button round color="p1" full (click)="register()">Cadastrar</button>
+</ion-content>

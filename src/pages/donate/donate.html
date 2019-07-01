@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Doar um bichinho</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg-img">
+  <form [formGroup]="formGroup" (ngSubmit)="donate()">
+    <ion-list>
+      <ion-item>
+        <button ion-button round block (click)="escolha">Selecionar Foto</button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tipo: </ion-label>
+        <ion-select formControlName="tipo">
+          <ion-option>Gato</ion-option>
+          <ion-option>Cachorro</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Nome: </ion-label>
+        <ion-input class="linha" formControlName="nome" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Idade: </ion-label>
+        <ion-select formControlName="idade" required>
+          <ion-option>Filhote</ion-option>
+          <ion-option>Adulto</ion-option>
+          <ion-option>Idoso</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Gênero: </ion-label>
+        <ion-select formControlName="genero" required>
+          <ion-option>Fêmea</ion-option>
+          <ion-option>Macho</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Raça: </ion-label>
+        <ion-input class="linha" formControlName="raca" type="text" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Tamanho: </ion-label>
+        <ion-select formControlName="tamanho" required>
+          <ion-option>Pequeno</ion-option>
+          <ion-option>Médio</ion-option>
+          <ion-option>Grande</ion-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-item>
+        <button ion-button round block color="p1">Doar</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

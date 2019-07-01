@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Adotar um Gato</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-img">
+  <ion-list>
+    <ion-item *ngFor="let adp of adopts" >
+      <ion-avatar item-start>
+          <img src="{{adp.foto}}"/>
+      </ion-avatar>
+      <h2>{{adp.nome}}</h2>
+      <p>Idade: {{adp.idade}}</p>
+      <p>Gênero: {{adp.genero}}</p>
+      <p>Tamanho: {{adp.tamanho}}</p>
+    </ion-item>
+    
+  </ion-list> 
+</ion-content>

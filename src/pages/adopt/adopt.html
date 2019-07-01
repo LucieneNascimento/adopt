@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Adote</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-img card-background-page">
+  <ion-card>
+    <img (click)="adoptDog()" src="assets/imgs/dog.jpg"/>
+    <div (click)="adoptDog()" class="card-title">Cachorros</div>
+  </ion-card>
+
+  <ion-card>
+    <img (click)="adoptCat()" src="assets/imgs/cat.jpg"/>
+    <div (click)="adoptCat()" class="card-title">Gatos</div>
+  </ion-card> 
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PÁGINA INICIAL</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-img">
+  <div text-center class="container-logo">
+    <img src="assets/imgs/logo.png">
+  </div>
+  <div>
+    <div><button ion-button round block color="dark" (click)="adopt()">QUERO ADOTAR</button></div>
+    &nbsp;&nbsp;
+    <div><button ion-button round block color="dark" (click)="donate()">QUERO  DOAR</button></div>
+    &nbsp;&nbsp;
+    <div><button ion-button round block color="dark">ONGS PRÓXIMAS</button></div>
+  </div>
+</ion-content>
